@@ -1,2 +1,2 @@
-# Formul-rio-b-sico-para-hotel
+# FormBasico
 Atividade realizada durante a aula de Deselvovimento Web 
