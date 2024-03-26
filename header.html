@@ -45,15 +45,24 @@
                 <label for="nota"></label><br>
                 <input type="range" id="nota" name="nota" min="0" max="100" value="50" oninput="output.value = nota.value"><br>
                 <output id="output" name="output" for="nota">50</output><br><br>
-                <input type="submit" class="btn btn-dark" value="Enviar">
+        
             </form>
         </div>
 <br><br>
-        <div class="pages">
-            <a href="index.html">
-                <h3>Retorno</h3>
-            </a>
-            </div>
-    
+<div class="pages">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+         
+          <li class="page-item"><a class="page-link" href="main.css">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="main.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="index.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+ 
 </body>
 </html>

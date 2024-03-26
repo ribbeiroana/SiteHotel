@@ -10,3 +10,6 @@ function calcularTotal() {
     // Exibir o total calculado na página
     document.getElementById("total").innerText = "Total da Hospedagem: R$" + total.toFixed(2);
 }
+  // Ativar o carrossel
+  var myCarousel = document.querySelector('#carouselExample');
+  var carousel = new bootstrap.Carousel(myCarousel);

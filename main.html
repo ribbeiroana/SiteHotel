@@ -18,12 +18,7 @@
         <button type="button" class="btn-close" aria-label="Close"></button>
         <button type="button" class="btn-close" disabled aria-label="Close"></button>
     </div> 
-<br>
-    <div class="img2">
-        <img src="quarto.jpg" class="img-fluid">   
-    </div> 
-<br>
-      
+<br>     
      <div class="menu"> 
       <h2>Opções de Comidas</h2>
        <p>No nosso hotel, oferecemos uma variedade de deliciosas opções de comida para os nossos hóspedes. Todas as refeições estão inclusas no pacote de hospedagem, garantindo uma experiência gastronômica completa e satisfatória durante a sua estadia.</p>
@@ -38,10 +33,46 @@
 
        <p>Por favor, note que todas as refeições mencionadas acima estão incluídas no pacote de hospedagem. Bebidas não estão incluídas.</p>
      </div>
-<br><br>
-    <div class="img3">
-        <img src="cafe.jpg" class="img-fluid">   
-    </div> 
+<br>
+   
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="recepcao.jpg" class="d-block w-100" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="quarto.jpg" class="d-block w-100" alt="First slide">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          <div class="carousel-item">
+            <img src="piscina2.jpg" class="d-block w-100" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="cafe.jpg" class="d-block w-100" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
 <br><br>
      <div class="atividades">
      <h2>Atividades Disponíveis</h2>
@@ -61,49 +92,68 @@
      
      <p>Todas as atividades mencionadas acima estão disponíveis para os hóspedes desfrutarem durante a sua estadia. Entre em contato com a recepção para mais informações e para reservar suas atividades preferidas.</p>
     </div> 
-    
-    <div class="img4">
-        <img src="academia.jpg" class="img-fluid">   
-    </div> 
-<br>
-    <div class="img5">
-        <img src="piscina3.jpg" class="img-fluid">   
-    </div> 
-<br>
-    <div class="calculadora">
-       <h1><i>Hospedagem</i></h1>
-       <form action="/action_page.php">
-    <fieldset> 
-        <form>
-           <div class="mb-3">
-             <label for="dias">Quantidade de Dias:</label>
-             <input type="number" id="dias" name="dias" min="1" required><br><br>
-            </div>
-            <div class="mb-3">
-             <label for="pessoas">Quantidade de Pessoas:</label>
-             <input type="number" id="pessoas" name="pessoas" min="1" required><br><br>
-            </div>
-        <button type="button" class="btn btn-dark" onclick="calcularTotal()">Calcular</button>
-    </fieldset>
-        </form>
-    </div>
-    
-    <div id="total"></div>
 <br><br>
-    <div class="img2">
-        <img src="teste.jpg" class="img-fluid">
-    </div> 
-<br><br>
-    <div class="pages">
-        <a href="header.html">
-            <h3>Próxima página</h3>
-        </a>
+
+<div class="card-container">
+    <div class="card">
+      <img src="academia.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">GYM</h5>
+        <a href="#" class="btn btn-primary">Visualizar atividade</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="piscina3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pool</h5>
+        <a href="#" class="btn btn-primary">Visualizar atividade</a>
+      </div>
     </div>
     
-    <div class="pages">
-        <a href="index.html">
-            <h3>Retorno</h3>
-        </a>
+  <div class="card">
+    <img src="praia.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Beach</h5>
+      <a href="#" class="btn btn-primary">Visualizar atividade</a>
     </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<div class="calculadora">
+    <h1><i>Hospedagem</i></h1>
+    <form action="/action_page.php">
+ <fieldset> 
+     <form>
+        <div class="mb-3">
+          <label for="dias">Quantidade de Dias:</label>
+          <input type="number" id="dias" name="dias" min="1" required><br><br>
+         </div>
+         <div class="mb-3">
+          <label for="pessoas">Quantidade de Pessoas:</label>
+          <input type="number" id="pessoas" name="pessoas" min="1" required><br><br>
+         </div>
+     <button type="button" class="btn btn-dark" onclick="calcularTotal()">Calcular</button>
+ </fieldset>
+     </form>
+ </div>
+ <div id="total"></div>
+<br><br><br>
+
+<div class="pages">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="main.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="header.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="header.html">Next</a></li>
+        </ul>
+      </nav>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
