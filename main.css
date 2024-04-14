@@ -106,10 +106,17 @@ header {
     width: 300px;
     margin: auto;
 }
-#map {
-    height: 400px;
+.mapBox{
+    position: relative;
+    width: 900x;
+    height: 500px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.mapBox iframe{
+    height: 100%;
     width: 100%;
-  }
+}
 .new{
     text-align: center;
     color: black;
