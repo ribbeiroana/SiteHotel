@@ -25,3 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
       interval: 3000 
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Inicializa o ScrollReveal para animar o elemento com a classe .title
+  ScrollReveal().reveal('.scroll', { delay: 200 });
+});
