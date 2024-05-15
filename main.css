@@ -1,12 +1,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
-    background: rgb(255, 255, 255);
+    background: rgb(243, 241, 241);
 }
 header {
     background-color: #050404; 
     color: rgb(207, 173, 18); 
-    padding: 15px;
+    padding: 5px;
     display: flex;
     align-items: center; 
 }
@@ -52,7 +52,7 @@ header {
 
 }
 #top{
-    width: 100%; /* Ajuste a largura conforme necessário */
+    width: 100%; 
     margin: 0 auto;
     position: relative;
     top: -60px;
@@ -76,11 +76,21 @@ header {
     vertical-align: top; 
     display: inline-block; 
 }
-.cadastro{
+.reserva{
     text-align: center;
-    color: black;
-    width: 300px;
-    margin: auto;
+    color: rgb(255, 244, 244);
+    margin: 20px;
+}
+.reserva form{
+    width: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: black;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
 }
 .menu{
     color: black;
@@ -118,22 +128,50 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 40px;
 }
-.duvidas{
-    text-align: center;
-    color: black;
-    float: none;
-}
-
-.avaliacao{
-    text-align: center;
-    color: black;
-    margin: auto;
-}
 
 .titulo {
     margin-bottom: 10px;
 }
 
-.scroll h1 {
-  visibility: hidden;
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+}
+#rodape {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*deixa uniforme*/
+}
+    
+.link a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+    
+.direitos {
+    color: white;
+}
+.avaliacao{
+    width: 100%;
+    padding: 50px 30px; 
+    max-width: 900px;
+}
+.avaliacao svg{
+    font-size: 90px;
+    color: #000000;
+}
+.avaliacao p.avali-text{
+    font-weight: 300;
+    margin-bottom: 20px;  
+}
+.slide .person p.name-person{
+    font-weight: 600;
+}
+.slide .person p.func-person{
+    font-family: initial;
 }
