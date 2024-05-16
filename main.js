@@ -25,17 +25,12 @@ document.addEventListener("DOMContentLoaded", function() {
       interval: 3000 
   });
 });
+function calcularReserva() {
+  var quartoSelecionado = document.getElementById("quarto").value;
+  var quantidadePessoas = document.getElementById("pessoas").value;
+  var quantidadeDias = document.getElementById("dias").value;
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+  var valorReserva = parseInt(quartoSelecionado) * parseInt(quantidadePessoas) * parseInt(quantidadeDias);
+
+  document.getElementById("resultado").innerText = "O valor total da reserva é: " + valorReserva + " reais.";
+}

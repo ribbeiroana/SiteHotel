@@ -149,9 +149,9 @@
   </div>
 </div>
 <br><br><br>
+<h1>RESERVA</h1>
 <div class="reserva">
-  <h1>RESERVA</h1>
-  <form action="/action_page.php" style="width: 40rem; text-align: center;"> 
+  <form style="width: 40rem; text-align: center;"> 
    <fieldset>
        <div class="mb-3">
            <label for="fname" class="form-label">Nome:</label>
@@ -195,24 +195,36 @@
         <label for="fname" class="form-label">Quarto</label>
         <select class="form-select" name="quarto" aria-label="quarto">
            <option selected></option>
-           <option value="1">Suíte</option>
-           <option value="2">Deluxe</option>
-           <option value="3">Standard</option>
+           <option value="700">Suíte</option>
+           <option value="500">Deluxe</option>
+           <option value="300">Standard</option>
          </select>
     </div>
        </div>
        <button type="submit" class="btn btn-dark">ENVIAR</button>
+       <button onclick="calcularReserva()">Calcular Reserva</button>
+
+<div id="resultado"></div>
    </fieldset>
 </form>
 </div>
+
 <br><br>
       <div class="mapBox">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120021.70425124287!2d-44.05686141043835!3d-19.937958649397768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1713128501538!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-<br>
-<section class="avaliacao mySwiper">
-  <div class="avaliacao-container swiper-wrapper">
-    <div class="slide swiper-slide">
+<br><br><br>
+
+
+<h1>FEEDBACKS</h1>
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
         <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
       </svg>
@@ -223,8 +235,9 @@
         <p class="name-person">Amanda Guedes</p>
         <p class="func-person">Hóspede</p>
       </div>
+     
     </div>
-    <div class="slide swiper-slide">
+    <div class="carousel-item">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
         <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
       </svg>
@@ -235,28 +248,41 @@
         <p class="name-person">Ramon Oliveira</p>
         <p class="func-person">Hóspede</p>
       </div>
+     
+    </div>
+    <div class="carousel-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+      </svg>
+      <p class="avali-text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ducimus placeat dolorem amet unde voluptatibus ipsum omnis perferendis nemo, modi commodi porro. Neque quasi recusandae magnam veniam atque fuga rem.
+      </p>
+      <div class="person">
+        <p class="name-person">Julia Pinheiro</p>
+        <p class="func-person">Hóspede</p>
       </div>
-      <div class="slide swiper-slide">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-          <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-        </svg>
-        <p class="avali-text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum ducimus placeat dolorem amet unde voluptatibus ipsum omnis perferendis nemo, modi commodi porro. Neque quasi recusandae magnam veniam atque fuga rem.
-        </p>
-        <div class="person">
-          <p class="name-person">Julia Pinheiro</p>
-          <p class="func-person">Hóspede</p>
-        </div>
+    
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<br><br>
+<h1>ALGUMA DÚVIDA?</h1>
+<div class="duvida">
+<div class="row mb-3">
+      <div class="form-floating" name="data[tbabertura][descricao]" >
+          <textarea class="form-control" placeholder="Descreva sua dúvida" id="floatingTextarea2" required></textarea>
       </div>
-    </div>  
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-</section>
-
-<br><br><br>br
-
-
+</div>
+</div>
+<br><br>
 
 <footer>
   <div id="rodape">
@@ -267,12 +293,7 @@
       <span class="direitos">© 2024 Todos os direitos reservados</span>
   </div>
 </footer>
-
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="swiper-bundle.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>

@@ -104,12 +104,6 @@ header {
     margin-right: 30px;
     text-align: center;
 }
-.calculadora{
-    text-align: center;
-    color: black;
-    width: 300px;
-    margin: auto;
-}
 .mapBox{
     position: relative;
     width: 100%;
@@ -174,4 +168,36 @@ footer {
 }
 .slide .person p.func-person{
     font-family: initial;
+}
+#carouselExampleIndicators{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px;
+}
+#carouselExampleIndicators .carousel-indicators button{
+    color: #000000;
+    background-color: #000000;
+}
+.duvida .form-control{
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 600px;
+    color: #000000;
+}
+.form-control textarea{
+    color: #000000;
+
+}
+.duvida .form-floating{
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 500px;
 }
