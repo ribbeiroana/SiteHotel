@@ -1,0 +1,203 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: rgb(243, 241, 241);
+}
+header {
+    background-color: #050404; 
+    color: rgb(207, 173, 18); 
+    padding: 5px;
+    display: flex;
+    align-items: center; 
+}
+
+.logo img {
+    width: 50px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+#menu ul{
+    background-color: #000000;
+    border-radius: 40px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    right: 260px;
+    left: 260px;
+    top: 20px;
+    z-index: 9999;
+
+}
+#menu ul li{
+    display: inline;
+    padding: 50px;
+}
+#menu ul li a{
+    display: inline-block;
+    transition: background .6s;
+    text-decoration: none;
+    color: #ffffff;
+}
+#menu ul li a.menu-link:hover{
+    background-color: rgb(201, 171, 0);
+    padding: 10px;
+    box-shadow: 0 0 50px rgba(240, 237, 237, 0.5);
+    border-radius: 20px;
+    
+}
+#carouselExample{
+    max-width: 900px;
+    margin: auto;
+
+}
+#top{
+    width: 100%; 
+    margin: 0 auto;
+    position: relative;
+    top: -60px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+.card-container {
+    text-align: center; 
+  }
+
+.card{
+    text-align: center;
+    width: 18rem;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+    vertical-align: top; 
+    display: inline-block; 
+}
+.reserva{
+    text-align: center;
+    color: rgb(255, 244, 244);
+    margin: 20px;
+}
+.reserva form{
+    width: 100px; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: black;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.menu{
+    color: black;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+.atividades{
+    color: black;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+.mapBox{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    margin: 0;
+}
+.mapBox iframe{
+    height: 100%;
+    width: 100%;
+}
+.new{
+    text-align: center;
+    color: black;
+    margin-top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 40px;
+}
+
+.titulo {
+    margin-bottom: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+}
+#rodape {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*deixa uniforme*/
+}
+    
+.link a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+    
+.direitos {
+    color: white;
+}
+.avaliacao{
+    width: 100%;
+    padding: 50px 30px; 
+    max-width: 900px;
+}
+.avaliacao svg{
+    font-size: 90px;
+    color: #000000;
+}
+.avaliacao p.avali-text{
+    font-weight: 300;
+    margin-bottom: 20px;  
+}
+.slide .person p.name-person{
+    font-weight: 600;
+}
+.slide .person p.func-person{
+    font-family: initial;
+}
+#carouselExampleIndicators{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px;
+}
+#carouselExampleIndicators .carousel-indicators button{
+    color: #000000;
+    background-color: #000000;
+}
+.duvida .form-control{
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 600px;
+    color: #000000;
+}
+.form-control textarea{
+    color: #000000;
+
+}
+.duvida .form-floating{
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 500px;
+}
