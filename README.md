@@ -1,2 +1,2 @@
-# Formulário Básico para hotel 
-Atividade realizada durante a aula de Deselvovimento Web 
+Atualização da atividade desenvolvida em sala de aula 
+CSS adicionado no código
