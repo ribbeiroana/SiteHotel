@@ -1,5 +1,5 @@
 # Site para Hotel 
-Esse é um projeto de um site para um hotel chamado "Diamond Hotel". Vamos analisá-lo:
+Esse é um projeto de um site para um hotel chamado Diamond Hotel.
 
 ## Estrutura HTML:
 
@@ -7,7 +7,6 @@ Esse é um projeto de um site para um hotel chamado "Diamond Hotel". Vamos anali
 2. Nav: Lista de links de navegação.
 3. Sections: Dividem o conteúdo em seções como "Hospedagem", "Gastronomia", "Lazer", "Reserva", "Alguma Dúvida?" e "Localização".
 4. Footer: Contém o logotipo novamente e um link para a seção de localização.
-Conteúdo:
 5. Imagens: São utilizadas para ilustrar o hotel, suas instalações e quartos.
 6. Formulários: Permitem que os usuários inscrevam-se na newsletter e façam reservas, fornecendo informações como nome, CPF, e-mail, data de chegada, quantidade de dias e pessoas, tipo de quarto, entre outros.
 <div>
