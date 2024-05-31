@@ -11,7 +11,7 @@ Conteúdo:
 5. Imagens: São utilizadas para ilustrar o hotel, suas instalações e quartos.
 6. Formulários: Permitem que os usuários inscrevam-se na newsletter e façam reservas, fornecendo informações como nome, CPF, e-mail, data de chegada, quantidade de dias e pessoas, tipo de quarto, entre outros.
 <div>
-    <img src="imgReadme/home.png" alt="">
+    <img src="imgReadme/inicio.png" alt="">
 </div>
 
 ## Funcionalidades JavaScript:

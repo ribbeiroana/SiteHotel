@@ -36,17 +36,37 @@ if (validarEmail(email)) {
   console.log("Por favor, insira um e-mail válido.");
 }
 
-function calcularDiaria(event) {
-  event.preventDefault(); // Evita que o formulário seja enviado
+function calcularHospedagem() {
+  // Obter os valores selecionados pelo usuário
+  var dias = document.getElementById('dias').value;
+  var quarto = document.getElementById('quarto').value;
+  var pessoas = document.getElementById('pessoas').value;
 
-  var numPessoas = parseInt(document.getElementById("pessoas").value);
-  var numDias = parseInt(document.getElementById("dias").value);
-  var tipoQuarto = parseInt(document.getElementById("quarto").value);
+  // Converter os valores para números inteiros
+dias = parseInt(dias);
+quarto = parseInt(quarto);
+pessoas = parseInt(pessoas);
 
-  var valorDiaria = numPessoas * numDias * tipoQuarto;
+// Calcular o valor total da hospedagem
+var valorTotal = dias * quarto * pessoas;
 
-  document.getElementById("resultado").textContent = "O valor total da diária é R$ " + valorDiaria.toFixed(2);
+// Exibir o resultado na tela
+document.getElementById('resultado').textContent = 'R$ ' + valorTotal.toFixed(2);
 }
 
-var botao = document.getElementById("botaoReserva");
-botao.addEventListener("click", calcularDiaria);
+
+
+
+
+
+
+
+
+// Seleciona o elemento do carrossel
+var carousel = document.getElementById('carouselExampleCaptions');
+
+// Inicializa o carrossel
+var carouselObj = new bootstrap.Carousel(carousel, {
+  interval: 2000, // Intervalo de 2 segundos
+  wrap: true // Permite que o carrossel volte ao início após o último slide
+});
