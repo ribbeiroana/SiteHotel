@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+
+}
+
+h1 {
+    color: rgb(15, 75, 13);
+    text-align: center;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+    text-decoration: dashed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: rgb(227, 236, 227);
+    text-align: center;
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+    text-decoration: dashed;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(15, 75, 13);
+    background: linear-gradient(90deg, rgba(15, 75, 13, 1) 0%, rgba(59, 24, 8, 1) 100%);
+    border-radius: 10px;
+    margin-right: 400px;
+    margin-left: 400px;
+
+}
+
+header {
+    background: rgb(15, 75, 13);
+    background: linear-gradient(90deg, rgba(15, 75, 13, 1) 0%, rgba(59, 24, 8, 1) 100%);
+    color: rgb(207, 173, 18);
+    text-shadow: 5px 5px 6px rgb(0, 0, 0);
+    text-decoration: dashed;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+    
+}
+
+#menu ul {
+    background: rgb(15, 75, 13);
+    background: linear-gradient(90deg, rgba(15, 75, 13, 1) 0%, rgba(59, 24, 8, 1) 100%);
+    border-radius: 40px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    right: 260px;
+    left: 260px;
+    top: 20px;
+    z-index: 9999;
+
+}
+
+#menu ul li {
+    display: inline;
+    padding: 50px;
+}
+
+#menu ul li a {
+    display: inline-block;
+    transition: background .6s;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#menu ul li a.menu-link:hover {
+    background-color: rgb(201, 171, 0);
+    padding: 10px;
+    box-shadow: 0 0 50px rgba(240, 237, 237, 0.5);
+    border-radius: 20px;
+
+}
+
+.card-group {
+    padding: 20px;
+    gap: 30px;
+
+}
+
+.card-group .card {
+    border: 1px solid rgb(121, 106, 106);
+    /* Define a borda preta de 2px */
+    box-shadow: 0 0 5px 1px rgb(104, 95, 95);
+    /* Adiciona um sombreado preto com deslocamento de 0 no eixo X, 0 no eixo Y, 10px de desfoque e 5px de espalhamento */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    
+}
+#secao{
+    background-color: rgba(15, 75, 13, 1);
+}
+#background{
+    background: rgb(15, 75, 13);
+    background: linear-gradient(90deg, rgba(15, 75, 13, 1) 0%, rgba(59, 24, 8, 1) 100%);
+}
+.text-decoration{
+    color: rgb(189, 199, 188);
+    text-align: center;
+    text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    text-decoration: dashed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text{
+    color: #ffffff;
+    text-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    text-decoration: dashed;
+}
+.reserva {
+    text-align: center;
+    color: rgb(255, 244, 244);
+    /* margin: 20px; */
+}
+
+.reserva form {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: black;
+    background: rgb(15, 75, 13);
+    background: linear-gradient(90deg, rgba(15, 75, 13, 1) 0%, rgba(59, 24, 8, 1) 100%);
+    border-radius: 10px;
+}
+
+.reserva button {
+    background-color: rgba(59, 24, 8, 1);
+}
+
+.menu {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.atividades {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 990px;
+}
+
+.mapBox {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.mapBox iframe {
+    height: 100%;
+    width: 100%;
+}
+.marketing{
+    text-align: center;
+    margin: 50px;
+}
+
+.new {
+    color: rgba(59, 24, 8, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-bottom: 40px;
+}
+
+.new form {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new input {
+    border: 3px solid rgb(15, 75, 13);
+}
+
+.new button {
+    background-color: rgba(59, 24, 8, 1);
+}
+
+footer {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    background: rgb(15, 75, 13);
+    background: linear-gradient(90deg, rgba(15, 75, 13, 1) 0%, rgba(59, 24, 8, 1) 100%);
+}
+
+#rodape {
+    padding: 20px;
+    display: flex;
+
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+}
+
+.duvida textarea {
+    border: 3px solid rgb(15, 75, 13);
+    box-shadow: #000000;
+
+}
