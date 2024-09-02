@@ -1,5 +1,5 @@
 # Site para Hotel 
-Esse é um projeto de um site para um hotel chamado "Diamond Hotel". Vamos analisá-lo:
+Esse é um projeto de um site para um hotel chamado "Diamond Hotel".
 
 ## Estrutura HTML:
 
