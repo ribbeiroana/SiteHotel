@@ -1,5 +1,5 @@
 # Site para Hotel 
-Esse é um projeto de um site para um hotel chamado "Diamond Hotel". 
+Esse é um projeto de um site para um hotel chamado "Diamond Hotel".
 
 ## Estrutura HTML:
 
@@ -20,7 +20,7 @@ Conteúdo:
 3. Validação de E-mail: Verifica se o e-mail inserido é válido.
 4. Cálculo de Diária: Calcula o valor total da diária com base na quantidade de pessoas, dias e tipo de quarto selecionados no formulário de reserva.
 <div>
-    <img src="imgReadme/gastronomiareadme.png" alt="">
+    <img src="imgReadme/gastronomia.png" alt="">
 </div>
 
 ## Funcionalidades CSS e Bootstrap:
@@ -31,7 +31,7 @@ Conteúdo:
 5. Utilização de Componentes CSS do Bootstrap:
 
 <div>
-    <img src="imgReadme/reservareadme.png" alt="">
+    <img src="imgReadme/reserva.png" alt="">
 </div>
 <br>
 
