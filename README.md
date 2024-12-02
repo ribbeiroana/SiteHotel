@@ -1,6 +1,6 @@
 # Site para Hotel 
 Esse é um projeto de um site para um hotel chamado "Diamond Hotel".
-
+Projeto criado durante as aulas na faculdade.
 ## Estrutura HTML:
 
 1. Header: Contém o logotipo e o nome do hotel.
